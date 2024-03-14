@@ -1,0 +1,27 @@
+{
+  "name": "texturetalk",
+  "version": "1.0.0",
+  "description": "texturetalk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rpolitis/texturetalk.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rpolitis/texturetalk/issues"
+  },
+  "homepage": "https://github.com/Rpolitis/texturetalk#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "mongoose": "^8.2.1",
+    "nodemon": "^3.1.0"
+  }
+}
