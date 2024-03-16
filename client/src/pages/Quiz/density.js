@@ -1,11 +1,11 @@
 import React from "react";
 
-const Quiz = () => {
+const hair_density = () => {
     return (
         <div>
-            <h1>Hello quiz!</h1>
+            <h1></h1>
         </div>
     );
 };
  
-export default Quiz;
+export default hair_density;
