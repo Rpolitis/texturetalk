@@ -1,6 +1,6 @@
 import React from "react";
 
-const start_quiz = () => {
+const Quiz = () => {
     return (
         <div>
             <h1>ready to find your perfect hair routine?</h1>
@@ -9,4 +9,4 @@ const start_quiz = () => {
     );
 };
  
-export default start_quiz;
+export default Quiz;
