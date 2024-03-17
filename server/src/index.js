@@ -22,21 +22,34 @@ const express = require('express');
 const mongoose = require('mongoose');
 const authRoutes = require('./routes/authRoutes');
 
+// import the router which we exported from posts.js
+import postRoutes from './routes/posts.js';
+
 const app = express();
+
+// use express middleware to connect this to our application
+// every route inside of postRoutes is going to start with /posts
+app.use('/posts', postRoutes)
+
+app.use(bodyParser.json({limit: "30mb", extended: true}));
+app.use(bodyParser.urlencoded({limit: "30mb", extended: true}));
+app.use(cors());
 
 // Middleware
 app.use(express.json());
 
-// Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/mydatabase', { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => console.log('MongoDB connected'))
-  .catch(err => console.error(err));
+const CONNECTION_URL = 'mongodb+srv://dsun:dsun123@cluster0.s5zv6nz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+const PORT = process.env.PORT || 5000;
+
+// use mongoose to connect to our database
+mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
+    .then(() => app.listen(PORT, () => console.log(`Server running on port: ${PORT}`)))
+    .catch((error) => console.log(error.message));
 
 // Use auth routes
 app.use('/api/auth', authRoutes);
 
 // Start the server
-const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
