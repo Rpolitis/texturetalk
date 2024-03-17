@@ -18,9 +18,10 @@ import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import cors from 'cors';
 
-const express = require('express');
-const mongoose = require('mongoose');
-const authRoutes = require('./routes/authRoutes');
+// const express = require('express');
+// const mongoose = require('mongoose');
+// const authRoutes = require('./routes/authRoutes');
+import authRoutes from './routes/authRoutes.js'
 
 // import the router which we exported from posts.js
 import postRoutes from './routes/posts.js';

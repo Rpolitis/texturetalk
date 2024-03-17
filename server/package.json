@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "texturetalk",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,16 +13,18 @@
     "url": "git+https://github.com/Rpolitis/texturetalk.git"
   },
   "keywords": [],
-  "author": "Colby",
+  "author": "Colby, Ryan, David, Ariana",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Rpolitis/texturetalk/issues"
   },
   "homepage": "https://github.com/Rpolitis/texturetalk#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "express": "^4.18.3",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.2.2",
     "nodemon": "^3.1.0"
   }
