@@ -1,0 +1,12 @@
+.main {
+    padding: 2rem;
+    padding-bottom: 5rem;
+}
+
+.paper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
