@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar/Navbar";
 import Landing from "./pages/Landing/landing"
-import Quiz from "./pages/Quiz/1startquiz";
+import Quiz from "./pages/Quiz/startquiz";
 import Login from "./pages/Login/login";
 import About from "./pages/About/about"
 import Terms from "./pages/Terms/terms"
