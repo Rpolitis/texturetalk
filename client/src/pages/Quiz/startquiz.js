@@ -4,14 +4,15 @@ import './button.css';
 // StartQuiz component represents the start page of the quiz
 const StartQuiz = ({ onStartQuiz }) => {
     return (
-        <div style={{ textAlign: "center", marginTop: "50px" }}>
-            <h1>Ready to find your perfect hair routine?</h1>
-            <h2>Take our quick quiz for your personalized match.</h2>
-            {/* Button to start the quiz */}
-            <button className="start-button" onClick={onStartQuiz}>
-                Start the Quiz
-            </button>
-
+        <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", minHeight: "75vh" }}>
+            <div style={{ textAlign: "center" }}>
+                <h1>ready to find your perfect hair routine?</h1>
+                <h3>take our quick quiz for your personalized match.</h3>
+                {/* Button to start the quiz */}
+                <button className="start-button" onClick={onStartQuiz}>
+                    start the quiz
+                </button>
+            </div>
         </div>
     );
 };
