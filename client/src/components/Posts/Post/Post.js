@@ -1,8 +1,6 @@
 import React from "react";
 import './Post.css';
-import { Card, CardActions, CardContent, CardMedia, Button, Typography } from '@mui/material';
-import ThumbUpAltIcon from '@mui/material/Icon';
-import DeleteIcon from '@mui/material/Icon';
+import { Card, CardContent, CardMedia, Button, Typography } from '@mui/material';
 import MoreHoriz from '@mui/material/Icon';
 import moment from 'moment';
 
@@ -26,17 +24,6 @@ const Post = ({ post, setCurrentId }) => {
             <CardContent>
                 <Typography variant="h5" gutterBottom >{post.message}</Typography>
             </CardContent>
-            <CardActions className="cardActions">
-                <Button size="small" onClick={() => {}}>
-                    <ThumbUpAltIcon fontSize="small"/>
-                    Like
-                    {post.likeCount}
-                </Button>
-                <Button size="small" onClick={() => {}}>
-                    <DeleteIcon fontSize="small"/>
-                    Delete
-                </Button>
-            </CardActions>
        </Card>
     );
 };
