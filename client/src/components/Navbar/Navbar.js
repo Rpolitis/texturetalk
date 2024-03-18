@@ -7,7 +7,7 @@ import { jwtDecode } from "jwt-decode";
 import logo from '../../images/hair-salon-logo-black-png.webp'
 
 const Navbar = () => {
-  const [user, setUser] = useState(JSON.parse(localStorage.getItem('profile')));
+  const [user, setUser] = useState(JSON.parse(localStorage.getItem('profile')) || null );
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const location = useLocation();
@@ -23,27 +23,20 @@ const Navbar = () => {
 
     if(token) {
       const decodedToken = jwtDecode(token);
-
       if(decodedToken.exp * 1000 < new Date().getTime()) logout();
     }
 
     setUser(JSON.parse(localStorage.getItem('profile')));
-  }, [location]);// eslint-disable-line react-hooks/exhaustive-deps
+  }, [location, user?.token]);// eslint-disable-line react-hooks/exhaustive-deps
 
   return (
       <div className="nav">
         {/* Logo from https://www.vecteezy.com/png/18876251-hair-salon-logo-black */}
         <div>
-          {
-            user ? (
-              <Link to="/home" className="logo"><img src={logo} alt="Logo" height={37} width={37}></img></Link>
-            ) : (
-              <Link to="/" className="logo"><img src={logo} alt="Logo" height={37} width={37}></img></Link>
-          )
-          }
-        </div>
+        <Link to={user ? "/home" : "/"} className="logo"><img src={logo} alt="Logo" height={37} width={37} /></Link>
+      </div>
         <Link to="/quiz">quiz</Link>
-        <div className="options">
+        <div className="currUser">
         {
           user ? (
             <div className="profile">

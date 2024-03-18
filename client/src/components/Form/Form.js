@@ -10,9 +10,15 @@ const Form = ({currentId, setCurrentId }) => {
     const post = useSelector((state) => currentId ? state.posts.find((p) => p._id === currentId ) : null);
     const dispatch = useDispatch();
 
-    const [postData, setPostData ] = useState({
-        creator: '', title:'', description: '', tags: '', selectedFile: ''
-    });
+    const initialState = {
+        creator: '', 
+        title: '', 
+        description: '', 
+        tags: '', 
+        selectedFile: ''
+    };
+    
+    const [postData, setPostData] = useState(initialState);
 
     useEffect(() => {
         if(post) setPostData(post);
@@ -31,9 +37,7 @@ const Form = ({currentId, setCurrentId }) => {
 
     const clear = () => {
         setCurrentId(null);
-        setPostData({
-            creator: '', title:'', description: '', tags: '', selectedFile: ''
-        })
+        setPostData(initialState);
     }
 
     return (
