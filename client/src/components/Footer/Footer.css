@@ -4,14 +4,17 @@
     background-color: whitesmoke;
     color: rgb(21, 21, 21);
     display: flex;
-    padding: 1rem;
     border-top: black solid 1px;
     /* box-shadow: 0 50vh 0 50vh #CCD6DB; */
     box-shadow: 0 50vh 0 50vh whitesmoke;
+    position: absolute;
+    bottom: 0;
+    height: 6rem;
+    width: 100%;
 }
 
 .footer ul {
-    padding: 0;
+    padding-top: 1rem;
     margin: 0;
     list-style: none;
     text-decoration: none;
@@ -20,4 +23,5 @@
 .footer a {
     text-decoration: none;
     color: rgb(21, 21, 21);
+    padding: 1rem;
 }
