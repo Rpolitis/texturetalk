@@ -29,17 +29,19 @@ import userRouter from './routes/authRoutes.js';
 
 const app = express();
 
-// use express middleware to connect this to our application
-// every route inside of postRoutes is going to start with /posts
-app.use('/posts', postRoutes)
-app.use('/user', userRouter);
-
 app.use(bodyParser.json({limit: "30mb", extended: true}));
 app.use(bodyParser.urlencoded({limit: "30mb", extended: true}));
 app.use(cors());
 
 // Middleware
 app.use(express.json());
+
+// use express middleware to connect this to our application
+// every route inside of postRoutes is going to start with /posts
+app.use('/posts', postRoutes)
+app.use('/user', userRouter);
+// Use auth routes
+app.use('/api/auth', authRoutes);
 
 const CONNECTION_URL = 'mongodb+srv://dsun:dsun123@cluster0.s5zv6nz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
 const PORT = process.env.PORT || 5000;
@@ -48,9 +50,6 @@ const PORT = process.env.PORT || 5000;
 mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => app.listen(PORT, () => console.log(`Server running on port: ${PORT}`)))
     .catch((error) => console.log(error.message));
-
-// Use auth routes
-app.use('/api/auth', authRoutes);
 
 // Start the server
 // app.listen(PORT, () => {
