@@ -9,9 +9,9 @@ const Q5Porosity = () => {
             <h4>If your hair sinks but doesn’t touch the bottom of the glass, it has well-balanced porosity.</h4>
             <h4>If it sinks to the bottom, your hair has high porosity.</h4>
             <div className="button-container">
-                <button className="hair-type-button">low porosity</button>
-                <button className="hair-type-button">well-balanced porosity</button>
-                <button className="hair-type-button">high porosity</button>
+                <button className="hair-type-button" onClick={() => window.location.href = "/quizresults"}>low</button>
+                <button className="hair-type-button" onClick={() => window.location.href = "/quizresults"}>well-balanced</button>
+                <button className="hair-type-button" onClick={() => window.location.href = "/quizresults"}>high</button>
             </div>
         </div>
     );

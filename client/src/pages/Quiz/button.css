@@ -34,7 +34,7 @@ h4 {
     color: #c1c1c1;
     font-size: 20px;
     cursor: pointer;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     transition: background-color 0.3s ease;
     margin-top: 10%;
     text-decoration: none;
@@ -57,9 +57,10 @@ h4 {
     border: none;
     border-radius: 50%; /* Border radius set to 50% for perfect circle */
     background-color: #080808;
-    color: #ffffff;
-    font-size: 16px;
+    color: #c1c1c1;
+    font-size: 20px;
     cursor: pointer;
+    letter-spacing: 1px;
     transition: background-color 0.3s ease;
 }
 
