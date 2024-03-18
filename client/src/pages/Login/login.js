@@ -33,7 +33,7 @@ const Login = () => {
 
     return (
         <Container component="main" maxWidth="xs" className="main">
-            <Paper elevation={3} className="paper" sx={{borderRadius: '0px', border: '1px solid black'}}>
+            <Paper elevation={3} className="paper" sx={{borderRadius: '0px', border: '1px solid black', backgroundColor: 'whitesmoke'}}>
                 <h1>welcome to texturetalk.</h1>
                 <form onSubmit={handleSubmit}>
                     <Grid container spacing={2}>
@@ -49,14 +49,14 @@ const Login = () => {
                         <Input name="password" label="Password" handleChange={handleChange} type="password" />
                         { isSignup && <Input name="confirmPassword" label="Retype Password" handleChange={handleChange} type="password" />}
                     </Grid>
-                    <Button type="Submit" fullWidth className="Submit">
+                    <Button type="Submit" fullWidth className="Submit" sx={{ color: "rgb(201, 26, 137);"}}>
                         {
                             isSignup ? 'Sign Up' : 'Log in'
                         }
                     </Button>
                     <Grid container justify="flex-end">
                         <Grid item>
-                            <Button onClick={switchMode}>
+                            <Button onClick={switchMode} sx={{ color: "rgb(21, 21, 21);"}}>
                                 {
                                     isSignup ? 'Already have an account? Log in' : "Don't have an account? Sign up"
                                 }

@@ -41,19 +41,19 @@ const Form = ({currentId, setCurrentId }) => {
     }
 
     return (
-        <Paper className="paper" sx={{borderRadius: '0px', padding: '50px', border: '1px solid black', borderTop: '0'}} >
+        <Paper className="paper" sx={{borderRadius: '0px', padding: '50px', border: '1px solid black', borderTop: '0', backgroundColor: 'whitesmoke'}} >
             <form autoComplete="off" noValidate onSubmit={handleSubmit}>
-                <Typography variant="h6">{currentId ? 'Editing' : 'Create'} a Post</Typography>
-                <TextField name="creator" label="Creator" fullWidth value={postData.creator} onChange={(e) => setPostData({ ...postData, creator: e.target.value })} />
-                <TextField name="title" label="Title" fullWidth value={postData.title} onChange={(e) => setPostData({ ...postData, title: e.target.value })} />
-                <TextField name="description" label="Description" fullWidth value={postData.description} onChange={(e) => setPostData({ ...postData, description: e.target.value })} />
-                <TextField name="tags" label="Tags" fullWidth value={postData.tags} onChange={(e) => setPostData({ ...postData, tags: e.target.value })} />
+                <Typography sx={{paddingBottom: '10px'}} variant="h6">{currentId ? 'Editing' : 'Create'} a Post</Typography>
+                <TextField sx={{paddingBottom: '10px'}} name="creator" label="Creator" fullWidth value={postData.creator} onChange={(e) => setPostData({ ...postData, creator: e.target.value })} />
+                <TextField sx={{paddingBottom: '10px'}} name="title" label="Title" fullWidth value={postData.title} onChange={(e) => setPostData({ ...postData, title: e.target.value })} />
+                <TextField sx={{paddingBottom: '10px'}} name="description" label="Description" fullWidth value={postData.description} onChange={(e) => setPostData({ ...postData, description: e.target.value })} />
+                <TextField  sx={{paddingBottom: '10px'}} name="tags" label="Tags" fullWidth value={postData.tags} onChange={(e) => setPostData({ ...postData, tags: e.target.value })} />
                 <div className="fileInput">
-                    <FileBase type="file" multiple={false} onDone={({base64}) => setPostData({ ...postData, selectedFile: base64})}/>
+                    <FileBase sx={{paddingBottom: '10px'}} type="file" multiple={false} onDone={({base64}) => setPostData({ ...postData, selectedFile: base64})}/>
                 </div>
                 <div className="buttons">
-                    <Button className="submit" variant="contained" type="submit" fullWidth >Submit</Button>
-                    <Button  variant="contained" onClick={clear} fullWidth>Clear</Button>
+                    <Button sx={{ color: "rgb(201, 26, 137);", paddingTop: '10px'}} className="submit" type="submit" fullWidth >Submit</Button>
+                    <Button sx={{ color: "rgb(21, 21, 21);"}} onClick={clear} fullWidth>Clear</Button>
                 </div>
             </form>
         </Paper>
