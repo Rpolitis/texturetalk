@@ -5,7 +5,7 @@ import './button.css';
 // StartQuiz component represents the start page of the quiz
 const StartQuiz = () => {
     return (
-        <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", minHeight: "75vh" }}>
+        <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", minHeight: "78.8vh" }}>
             <div style={{ textAlign: "center" }}>
                 <h1>Ready to find your perfect hair routine?</h1>
                 <h3>Take our quick quiz for your personalized match.</h3>
