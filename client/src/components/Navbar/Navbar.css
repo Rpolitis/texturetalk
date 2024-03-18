@@ -22,3 +22,8 @@
     color: rgb(21, 21, 21);
     /* color: white; */
 }
+
+.profile {
+    display: flex;
+    flex-direction: row;
+}
