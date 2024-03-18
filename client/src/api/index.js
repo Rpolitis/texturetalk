@@ -2,9 +2,6 @@ import axios from "axios";
 
 const API = axios.create({ baseURL: "http://localhost:5000"});
 
-const url = 'http://localhost:5000/posts';
-
-export const fetchPosts = () => API;
 
 API.interceptors.request.use((req) => {
     if(localStorage.getItem("profile")) {
@@ -13,7 +10,8 @@ API.interceptors.request.use((req) => {
     return req;
 });
 
+export const fetchPosts = () => API.get('/posts');
 export const logIn = (formData) => API.post('/api/auth/signin', formData);
 export const signUp = (formData) => API.post('/api/auth/signup', formData);
-export const createPost = (newPost) => axios.post(url, newPost);
-export const updatePost = (id, updatedPost) => axios.patch(`${url}/${id}`, updatedPost);
+export const createPost = (newPost) => API.post('/posts', newPost);
+export const updatePost = (id, updatedPost) => API.patch(`/posts/${id}`, updatedPost);

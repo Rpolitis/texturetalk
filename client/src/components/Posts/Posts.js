@@ -10,7 +10,8 @@ const Posts = ({setCurrentId}) => {
     console.log(posts);
 
     return (
-        <Grid className="container" container alignItems="stretch" spacing={3}>
+        !posts.length ? <p>No posts!</p> :
+        (<Grid className="container" container alignItems="stretch" spacing={3}>
             {
                 posts.map((post) => (
                     <Grid key={posts._id} item xs={12} sm={6}> 
@@ -18,7 +19,7 @@ const Posts = ({setCurrentId}) => {
                     </Grid>
                 ))
             }
-        </Grid>
+        </Grid>)
     )
 };
  
