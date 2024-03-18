@@ -7,7 +7,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   background-color: #efe0cf;
-  /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url('../../images/landing.png');*/
-  /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(246,237,207,1) 45%, rgba(0,212,255,1) 100%); */
+  /* Background image from https://negativespace.co/abstract-blur-background/ */
+  background-image: url(../src/images/negative-space-colorful-bokeh-abstract-20.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   color: rgb(21, 21, 21);
 }

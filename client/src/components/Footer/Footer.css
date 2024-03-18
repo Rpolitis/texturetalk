@@ -1,11 +1,13 @@
 .footer {
     /* background-color: rgb(75, 255, 150); */
-    background-color: #CCD6DB;
+    /* background-color: #CCD6DB; */
+    background-color: whitesmoke;
     color: rgb(21, 21, 21);
     display: flex;
     padding: 1rem;
     border-top: black solid 1px;
-    box-shadow: 0 50vh 0 50vh #CCD6DB;
+    /* box-shadow: 0 50vh 0 50vh #CCD6DB; */
+    box-shadow: 0 50vh 0 50vh whitesmoke;
 }
 
 .footer ul {
