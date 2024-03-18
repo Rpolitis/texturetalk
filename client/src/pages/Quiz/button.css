@@ -1,3 +1,23 @@
+h1 {
+  font-size: 40px;
+  margin-top: 5%;
+  margin-bottom: 4%;
+}
+
+h3{ 
+    font-size: 25px;
+    font-weight: lighter;
+    margin-top: 1.5%;
+    margin-bottom: 3%;
+}
+
+h4 {
+    font-size: 21px;
+    font-weight: lighter;
+    margin-top: -1.7%;
+}
+
+
 .start-page {
     display: flex;
     flex-direction: column;
@@ -15,21 +35,35 @@
     font-size: 20px;
     cursor: pointer;
     letter-spacing: 2px;
-    font-weight: lighter;
     transition: background-color 0.3s ease;
-    margin-top: 1.5%;
+    margin-top: 10%;
+    text-decoration: none;
 }
 
 .start-button:hover {
     background-color: #1b1b1b;
 }
 
-h1{
-    font-size: 40px;
+.button-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4%;
+    margin-bottom: 6%;
 }
 
-h3{
-    font-size: 25px;
-    font-weight: lighter;
-    margin-top: 1.5%;
+.hair-type-button {
+    width: 200px; /* Set width and height to create circular buttons */
+    height: 200px;
+    border: none;
+    border-radius: 50%; /* Border radius set to 50% for perfect circle */
+    background-color: #080808;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.hair-type-button:hover {
+    background-color: #1b1b1b;
 }

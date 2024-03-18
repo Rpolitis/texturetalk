@@ -11,7 +11,7 @@ const StartQuiz = () => {
                 <h3>Take our quick quiz for your personalized match.</h3>
                 {/* Link to the first question page */}
                 <Link to="/q1type" className="start-button">
-                    Start the Quiz
+                    start the quiz
                 </Link>
             </div>
         </div>
