@@ -41,18 +41,20 @@ const Form = ({currentId, setCurrentId }) => {
     }
 
     return (
-        <Paper className="paper">
-            <form autoComplete="off" noValidate className="form" onSubmit={handleSubmit}>
+        <Paper className="paper" sx={{borderRadius: '0px', padding: '50px', border: '1px solid black', borderTop: '0'}} >
+            <form autoComplete="off" noValidate onSubmit={handleSubmit}>
                 <Typography variant="h6">{currentId ? 'Editing' : 'Create'} a Post</Typography>
-                <TextField name="creator" variant="outlined" label="Creator" fullWidth value={postData.creator} onChange={(e) => setPostData({ ...postData, creator: e.target.value })} />
-                <TextField name="title" variant="outlined" label="Title" fullWidth value={postData.title} onChange={(e) => setPostData({ ...postData, title: e.target.value })} />
-                <TextField name="description" variant="outlined" label="Description" fullWidth value={postData.description} onChange={(e) => setPostData({ ...postData, description: e.target.value })} />
-                <TextField name="tags" variant="outlined" label="Tags" fullWidth value={postData.tags} onChange={(e) => setPostData({ ...postData, tags: e.target.value })} />
+                <TextField name="creator" label="Creator" fullWidth value={postData.creator} onChange={(e) => setPostData({ ...postData, creator: e.target.value })} />
+                <TextField name="title" label="Title" fullWidth value={postData.title} onChange={(e) => setPostData({ ...postData, title: e.target.value })} />
+                <TextField name="description" label="Description" fullWidth value={postData.description} onChange={(e) => setPostData({ ...postData, description: e.target.value })} />
+                <TextField name="tags" label="Tags" fullWidth value={postData.tags} onChange={(e) => setPostData({ ...postData, tags: e.target.value })} />
                 <div className="fileInput">
                     <FileBase type="file" multiple={false} onDone={({base64}) => setPostData({ ...postData, selectedFile: base64})}/>
                 </div>
-                <Button className="buttonSubmit" variant="contained" size="lg" type="submit" fullWidth>Submit</Button>
-                <Button  variant="contained" size="sm" onClick={clear} fullWidth>Clear</Button>
+                <div className="buttons">
+                    <Button className="submit" variant="contained" type="submit" fullWidth >Submit</Button>
+                    <Button  variant="contained" onClick={clear} fullWidth>Clear</Button>
+                </div>
             </form>
         </Paper>
     );

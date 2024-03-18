@@ -33,7 +33,7 @@ const Login = () => {
 
     return (
         <Container component="main" maxWidth="xs" className="main">
-            <Paper elevation={3} className="paper">
+            <Paper elevation={3} className="paper" sx={{borderRadius: '0px', border: '1px solid black'}}>
                 <h1>welcome to texturetalk.</h1>
                 <form onSubmit={handleSubmit}>
                     <Grid container spacing={2}>
