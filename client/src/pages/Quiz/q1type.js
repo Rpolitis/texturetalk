@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const Q1Type = () => {
     return (
         <div style={{ textAlign: "center", marginTop: "50px" }}>
@@ -10,10 +11,10 @@ const Q1Type = () => {
             <h4>If your hair dries with a defined curl, you have curly hair.</h4>
             <h4>If your hair dries and forms tight spirals, you have coily hair.</h4>
             <div className="button-container">
-                <button className="hair-type-button">straight</button>
-                <button className="hair-type-button">wavy</button>
-                <button className="hair-type-button">curly</button>
-                <button className="hair-type-button">coily</button>
+                <button className="hair-type-button" onClick={() => window.location.href = "/q3density"}>straight</button>
+                <button className="hair-type-button"  onClick={() => window.location.href = "/q3density"}>wavy</button>
+                <button className="hair-type-button"  onClick={() => window.location.href = "/q3density"}>curly</button>
+                <button className="hair-type-button"  onClick={() => window.location.href = "/q3density"}>coily</button>
             </div>
         </div>
     );
