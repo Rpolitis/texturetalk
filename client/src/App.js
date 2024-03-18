@@ -8,6 +8,7 @@ import Login from "./pages/Login/login";
 import About from "./pages/About/about"
 import Terms from "./pages/Terms/terms"
 import Privacy from "./pages/Privacy/privacy"
+import Home from "./pages/Home/home"
 import Footer from "./components/Footer/Footer"
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/about" element={<About />}/>
           <Route path="/terms" element={<Terms />}/>
           <Route path="/privacy" element={<Privacy />}/>
+          <Route path="/home" element= {<Home />}/>
         </Routes>
         <Footer />
       </header>
