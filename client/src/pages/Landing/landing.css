@@ -7,5 +7,6 @@
     font-size: calc(20px + 2vmin);
     padding-bottom: 2rem;
     text-shadow: 1px 1px 2px rgb(114, 113, 113);
+    min-height: 75vh
 }
   
