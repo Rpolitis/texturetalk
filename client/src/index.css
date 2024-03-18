@@ -7,7 +7,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   background-color: #efe0cf;
-  /* Background image from https://negativespace.co/abstract-blur-background/ */
   background-image: url(../src/images/negative-space-colorful-bokeh-abstract-20.jpg);
   background-repeat: no-repeat;
   background-size: cover;

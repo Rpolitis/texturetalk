@@ -35,7 +35,7 @@ const Login = () => {
         <Container component="main" maxWidth="xs" className="main">
             <Paper elevation={3} className="paper">
                 <h1>welcome to texturetalk.</h1>
-                <form className="form" onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit}>
                     <Grid container spacing={2}>
                         {
                             isSignup && (
