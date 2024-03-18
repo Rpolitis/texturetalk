@@ -13,7 +13,7 @@ API.interceptors.request.use((req) => {
     return req;
 });
 
-export const logIn = (formData) => API.post('user/signin', formData);
-export const signUp = (formData) => API.post('user/signup', formData);
+export const logIn = (formData) => API.post('/api/auth/signin', formData);
+export const signUp = (formData) => API.post('/api/auth/signup', formData);
 export const createPost = (newPost) => axios.post(url, newPost);
 export const updatePost = (id, updatedPost) => axios.patch(`${url}/${id}`, updatedPost);
