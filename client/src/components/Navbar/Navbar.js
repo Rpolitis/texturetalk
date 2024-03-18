@@ -33,7 +33,15 @@ const Navbar = () => {
   return (
       <div className="nav">
         {/* Logo from https://www.vecteezy.com/png/18876251-hair-salon-logo-black */}
-        <Link to="/" className="logo"><img src={logo} alt="Logo" height={37} width={37}></img></Link>
+        <div>
+          {
+            user ? (
+              <Link to="/home" className="logo"><img src={logo} alt="Logo" height={37} width={37}></img></Link>
+            ) : (
+              <Link to="/" className="logo"><img src={logo} alt="Logo" height={37} width={37}></img></Link>
+          )
+          }
+        </div>
         <Link to="/quiz">quiz</Link>
         <div className="options">
         {
