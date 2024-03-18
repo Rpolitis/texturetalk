@@ -1,6 +1,8 @@
 .nav {
-    background-color: #efe0cf;
-    color: rgb(21, 21, 21);
+    /* background-color: #efe0cf; */
+    /* background-color: rgb(222, 217, 233); */
+    /* background-color: rgb(21, 21, 21); */
+    background-color: whitesmoke;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -18,5 +20,5 @@
 .nav a{
     text-decoration: none;
     color: rgb(21, 21, 21);
-
+    /* color: white; */
 }
