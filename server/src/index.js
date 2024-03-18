@@ -38,7 +38,7 @@ app.use(express.json());
 
 // use express middleware to connect this to our application
 // every route inside of postRoutes is going to start with /posts
-app.use('/posts', postRoutes)
+app.use('/posts', postRoutes);
 // Use auth routes
 app.use('/api/auth', authRoutes);
 
