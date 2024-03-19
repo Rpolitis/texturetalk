@@ -7,7 +7,7 @@ import { jwtDecode } from "jwt-decode";
 import logo from '../../images/hair-salon-logo-black-png.webp'
 
 const Navbar = () => {
-  const [user, setUser] = useState(JSON.parse(localStorage.getItem('profile')) || null );
+  const [user, setUser] = useState(JSON.parse(localStorage.getItem('profile')));
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const location = useLocation();
@@ -27,7 +27,7 @@ const Navbar = () => {
     }
 
     setUser(JSON.parse(localStorage.getItem('profile')));
-  }, [location, user?.token]);// eslint-disable-line react-hooks/exhaustive-deps
+  }, [location]);// eslint-disable-line react-hooks/exhaustive-deps
 
   return (
       <div className="nav">

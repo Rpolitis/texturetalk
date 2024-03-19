@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { Grid, Button, Paper, Container } from "@mui/material";
 import { signup, login } from "../../actions/auth";
 
-const initialState = { firstName: '', lastName: '', email: '', password: '', confirmPassword: ''}
+const initialState = { firstName: '', lastName: '', email: '', password: '', confirmPassword: ''};
 
 const Login = () => {
     const [isSignup, setIsSignup] = useState(false);
