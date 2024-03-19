@@ -9,7 +9,6 @@ const Post = ({ post, setCurrentId }) => {
        <Card>
             <CardMedia image={post.selectedFile} title={post.title} />
             <div>
-                <Typography variant="h6">{post.creator}</Typography>
                 <Typography variant="body2">{moment(post.createdAt).fromNow()}</Typography>
             </div>
             <div>
@@ -22,7 +21,7 @@ const Post = ({ post, setCurrentId }) => {
             </div>
             <Typography variant="h5" gutterBottom >{post.title}</Typography>
             <CardContent>
-                <Typography variant="h5" gutterBottom >{post.message}</Typography>
+                <Typography variant="h5" gutterBottom >{post.description}</Typography>
             </CardContent>
        </Card>
     );

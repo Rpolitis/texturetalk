@@ -11,7 +11,6 @@ const Form = ({currentId, setCurrentId }) => {
     const dispatch = useDispatch();
 
     const initialState = {
-        creator: '', 
         title: '', 
         description: '', 
         tags: '', 
@@ -44,7 +43,6 @@ const Form = ({currentId, setCurrentId }) => {
         <Paper className="paper" sx={{borderRadius: '0px', padding: '50px', border: '1px solid black', borderTop: '0', backgroundColor: 'whitesmoke'}} >
             <form autoComplete="off" noValidate onSubmit={handleSubmit}>
                 <Typography sx={{paddingBottom: '10px'}} variant="h6">{currentId ? 'Editing' : 'Create'} a Post</Typography>
-                <TextField sx={{paddingBottom: '10px'}} name="creator" label="Creator" fullWidth value={postData.creator} onChange={(e) => setPostData({ ...postData, creator: e.target.value })} />
                 <TextField sx={{paddingBottom: '10px'}} name="title" label="Title" fullWidth value={postData.title} onChange={(e) => setPostData({ ...postData, title: e.target.value })} />
                 <TextField sx={{paddingBottom: '10px'}} name="description" label="Description" fullWidth value={postData.description} onChange={(e) => setPostData({ ...postData, description: e.target.value })} />
                 <TextField  sx={{paddingBottom: '10px'}} name="tags" label="Tags" fullWidth value={postData.tags} onChange={(e) => setPostData({ ...postData, tags: e.target.value })} />
