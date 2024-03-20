@@ -5,8 +5,8 @@ import moment from 'moment';
 
 const Post = ({ post, setCurrentId }) => {
     return (
-       <Card className="post" sx={{ padding: "5px"}}>
-            <CardMedia className="postImage" src={post.selectedFile} title={post.title} />
+       <Card className="post" sx={{ padding: "10px"}}>
+            <CardMedia className="postImage" image={post.selectedFile} title={post.title} component='img' />
             <div className="header">
                 <Typography className="postTitle" variant="h5">{post.title}</Typography>
             </div>

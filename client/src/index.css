@@ -6,8 +6,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: #efe0cf;
-  background-image: url(../src/images/negative-space-colorful-bokeh-abstract-20.jpg);
+  background-color: whitesmoke;
+  background-image: url("/src/images/negative-space-colorful-bokeh-abstract-20.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: rgb(21, 21, 21);

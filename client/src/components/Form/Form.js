@@ -47,10 +47,10 @@ const Form = ({currentId, setCurrentId }) => {
                     <FileBase type="file" multiple={false} onDone={({base64}) => setPostData({ ...postData, selectedFile: base64})}/>
                 </div>
                 <TextField sx={{paddingBottom: '10px'}} name="title" label="Title" fullWidth value={postData.title} onChange={(e) => setPostData({ ...postData, title: e.target.value })} />
-                <TextField sx={{paddingBottom: '10px'}} name="description" label="Description" fullWidth value={postData.description} onChange={(e) => setPostData({ ...postData, description: e.target.value })} />
                 <TextField  sx={{paddingBottom: '10px'}} name="tags" label="Tags" fullWidth value={postData.tags} onChange={(e) => setPostData({ ...postData, tags: e.target.value })} />
+                <TextField sx={{paddingBottom: '10px'}} name="description" label="Description" fullWidth value={postData.description} onChange={(e) => setPostData({ ...postData, description: e.target.value })} />
                 <div className="buttons">
-                    <Button sx={{ color: "rgb(201, 26, 137)", borderColor: "rgb(21, 21, 21)", ":hover": {color: "whitesmoke", backgroundColor: "rgb(21, 21, 21)", borderColor: "whitesmoke"}}} contained type="submit" fullWidth >Submit</Button>
+                    <Button sx={{ color: "rgb(201, 26, 137)", borderColor: "rgb(21, 21, 21)", ":hover": {color: "whitesmoke", backgroundColor: "rgb(21, 21, 21)", borderColor: "whitesmoke"}}} type="submit" fullWidth >Submit</Button>
                     <Button sx={{ color: "rgb(21, 21, 21)", ":hover": {color: "whitesmoke", backgroundColor: "rgb(21, 21, 21)", borderColor: "whitesmoke"}}} onClick={clear} fullWidth>Clear</Button>
                 </div>
             </form>
