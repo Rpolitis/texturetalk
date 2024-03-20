@@ -58,7 +58,7 @@ const Login = () => {
                         <Grid item>
                             <Button onClick={switchMode} sx={{ color: "rgb(21, 21, 21)", borderStyle: "none", ":hover": {color: "rgb(21, 21, 21)", background: "none"}}}>
                                 {
-                                    isSignup ? 'Already have an account? Log in' : "Don't have an account? Sign up"
+                                    isSignup ? <p><u>Already have an account? Log in</u></p> : <p><u>Don't have an account? Sign up</u></p>
                                 }
                             </Button>
                         </Grid>
