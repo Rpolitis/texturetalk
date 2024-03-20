@@ -5,3 +5,11 @@
     align-items: center;
     padding: 2rem;
 }
+
+.buttons {
+    padding-top: 10px;
+}
+
+.fileInput {
+    padding-bottom: 10px;
+}

@@ -1,27 +1,21 @@
 import React from "react";
 import './Post.css';
-import { Card, CardContent, CardMedia, Button, Typography } from '@mui/material';
-import MoreHoriz from '@mui/material/Icon';
+import { Card, CardContent, CardMedia, Typography } from '@mui/material';
 import moment from 'moment';
 
 const Post = ({ post, setCurrentId }) => {
     return (
-       <Card>
-            <CardMedia image={post.selectedFile} title={post.title} />
-            <div>
-                <Typography variant="body2">{moment(post.createdAt).fromNow()}</Typography>
+       <Card className="post" sx={{ padding: "5px"}}>
+            <CardMedia className="postImage" src={post.selectedFile} title={post.title} />
+            <div className="header">
+                <Typography className="postTitle" variant="h5">{post.title}</Typography>
             </div>
-            <div>
-                <Button size="small" onClick={() => setCurrentId(post._id)} >
-                    <MoreHoriz fontSize="default" />
-                </Button>
+            <div className="extras">
+                <Typography className="postDate"variant="p">{moment(post.createdAt).fromNow()}</Typography>
+                <Typography className="postTag" variant="p">{post.tags.map((tag) => `#${tag} `)}</Typography>
             </div>
-            <div>
-                <Typography variant="body2">{post.tags.map((tag) => `#${tag} `)}</Typography>
-            </div>
-            <Typography variant="h5" gutterBottom >{post.title}</Typography>
             <CardContent>
-                <Typography variant="h5" gutterBottom >{post.description}</Typography>
+                <Typography className="postDesc" variant="h6" >{post.description}</Typography>
             </CardContent>
        </Card>
     );

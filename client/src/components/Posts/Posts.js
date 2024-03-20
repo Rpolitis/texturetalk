@@ -6,14 +6,11 @@ import { Grid } from "@mui/material";
 
 const Posts = ({setCurrentId}) => {
     const postsData = useSelector((state) => state.posts);
-
-    console.log(postsData);
-
     const posts = postsData.data;
 
     return (
         !posts ? <p>No posts!</p> :
-        (<Grid className="container" container alignItems="stretch" spacing={3}>
+        (<Grid className="container" container alignItems="stretch" spacing={3} sx={{paddingTop: "10px", paddingBottom: "10px"}}>
             {
                 posts?.map((post) => (
                     <Grid key={post._id} item xs={12} sm={6}> 

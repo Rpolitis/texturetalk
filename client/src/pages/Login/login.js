@@ -49,14 +49,14 @@ const Login = () => {
                         <Input name="password" label="Password" handleChange={handleChange} type="password" />
                         { isSignup && <Input name="confirmPassword" label="Retype Password" handleChange={handleChange} type="password" />}
                     </Grid>
-                    <Button type="Submit" fullWidth className="Submit" sx={{ color: "rgb(201, 26, 137);"}}>
-                        {
-                            isSignup ? 'Sign Up' : 'Log in'
-                        }
-                    </Button>
-                    <Grid container justify="flex-end">
+                    <Grid container paddingTop={2}>
+                        <Button type="Submit" fullWidth variant="outlined" sx={{ color: "rgb(201, 26, 137)", borderColor: "rgb(21, 21, 21)", ":hover": {color: "whitesmoke", backgroundColor: "rgb(21, 21, 21)", borderColor: "whitesmoke"}}} >
+                            {
+                                isSignup ? 'Sign Up' : 'Log in'
+                            }
+                        </Button>
                         <Grid item>
-                            <Button onClick={switchMode} sx={{ color: "rgb(21, 21, 21);"}}>
+                            <Button onClick={switchMode} sx={{ color: "rgb(21, 21, 21)", borderStyle: "none", ":hover": {color: "rgb(21, 21, 21)", background: "none"}}}>
                                 {
                                     isSignup ? 'Already have an account? Log in' : "Don't have an account? Sign up"
                                 }

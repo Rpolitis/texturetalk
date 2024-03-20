@@ -1,0 +1,11 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.extras {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
