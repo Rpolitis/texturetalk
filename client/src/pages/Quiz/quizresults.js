@@ -5,7 +5,7 @@ import { Paper } from "@mui/material";
 const QuizResults = () => {
     return (
         <div style={{ textAlign: "center", marginTop: "50px" }} className="main">
-            <Paper>
+            <Paper sx={{borderRadius: '0px', border: '1px solid black', backgroundColor: 'whitesmoke', padding: "1rem"}}>
             <h1>your results!</h1>
             <h3>you have curly hair.</h3>
             <h4>we recommend regular trims and deep conditioning.</h4>
