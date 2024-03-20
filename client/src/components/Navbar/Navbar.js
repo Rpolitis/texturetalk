@@ -4,7 +4,7 @@ import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Typography, Avatar, Button } from "@mui/material/"
 import { useDispatch } from "react-redux";
 import { jwtDecode } from "jwt-decode";
-import logo from '../../images/hair-salon-logo-black-png.webp'
+import logo from '../../images/t.png'
 
 const Navbar = () => {
   const [user, setUser] = useState(JSON.parse(localStorage.getItem('profile')));
@@ -31,9 +31,8 @@ const Navbar = () => {
 
   return (
       <div className="nav">
-        {/* Logo from https://www.vecteezy.com/png/18876251-hair-salon-logo-black */}
         <div>
-        <Link to={user ? "/home" : "/"} className="logo"><img src={logo} alt="Logo" height={37} width={37} /></Link>
+        <Link to={user ? "/home" : "/"} className="logo"><img className="t" src={logo} alt="Logo" height={40} width={40} /></Link>
       </div>
         <Link to="/quiz"><Button sx={{ color: "rgb(21, 21, 21)", borderColor: "rgb(21, 21, 21)", ":hover": {color: "whitesmoke", backgroundColor: "rgb(21, 21, 21)", borderColor: "whitesmoke"}}} variant="outlined" >take the quiz</Button></Link>
         <div className="currUser">

@@ -9,3 +9,11 @@
     flex-direction: column;
     justify-content: left;
 }
+
+.postImage {
+    border-radius: 0.5%;
+}
+
+.post {
+    border-radius: 10%;
+}

@@ -28,3 +28,7 @@
     flex-direction: row;
     gap: 1rem;
 }
+
+.t {
+    border-radius: 25%;
+}
