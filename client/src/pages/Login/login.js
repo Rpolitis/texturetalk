@@ -52,13 +52,13 @@ const Login = () => {
                     <Grid container paddingTop={2}>
                         <Button type="Submit" fullWidth variant="outlined" sx={{ color: "rgb(201, 26, 137)", borderColor: "rgb(21, 21, 21)", ":hover": {color: "whitesmoke", backgroundColor: "rgb(21, 21, 21)", borderColor: "whitesmoke"}}} >
                             {
-                                isSignup ? 'Sign Up' : 'Log in'
+                                isSignup ? 'Sign Up' : 'Login'
                             }
                         </Button>
                         <Grid item>
                             <Button onClick={switchMode} sx={{ color: "rgb(21, 21, 21)", borderStyle: "none", ":hover": {color: "rgb(21, 21, 21)", background: "none"}}}>
                                 {
-                                    isSignup ? <p><u>Already have an account? Log in</u></p> : <p><u>Don't have an account? Sign up</u></p>
+                                    isSignup ? <p><u>Already have an account? Login</u></p> : <p><u>Don't have an account? Sign up</u></p>
                                 }
                             </Button>
                         </Grid>
