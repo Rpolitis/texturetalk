@@ -16,7 +16,7 @@ import Q2Texture from './pages/Quiz/q2texture';
 import Q3Density from './pages/Quiz/q3density';
 import Q4Scalp from './pages/Quiz/q4scalp';
 import Q5Porosity from './pages/Quiz/q5porosity';
-import QuizResults from './pages/Quiz/quizresults';
+import QuizResults from './pages/Quiz/results/quizresults';
 
 function App() {
   return (
@@ -37,7 +37,7 @@ function App() {
           <Route path="/q3density" element= {<Q3Density />}/>
           <Route path="/q4scalp" element= {<Q4Scalp />}/>
           <Route path="/q5porosity" element= {<Q5Porosity />}/>
-          <Route path="/quizresults" element= {<QuizResults />}/>
+          <Route path="/results/quizresults" element= {<QuizResults />}/>
         </Routes>
         <Footer />
       </header>
