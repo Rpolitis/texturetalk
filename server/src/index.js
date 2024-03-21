@@ -10,7 +10,7 @@ import postRoutes from './routes/posts.js';
 const app = express();
 
 const corsOptions = {
-    origin: "http://localhost:3000" // frontend URI (ReactJS)
+    origin: "https://texturetalk.netlify.app/" // frontend URI (ReactJS)
 }
 app.use(express.json({ limit: '30mb' }));
 app.use(express.urlencoded({ limit: '30mb', extended: true }));
