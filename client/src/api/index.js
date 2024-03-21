@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = "https://texturetalk.onrender.com/";
+const baseURL = "https://texturetalk.onrender.com";
 
 const API = axios.create({ baseURL });
 
