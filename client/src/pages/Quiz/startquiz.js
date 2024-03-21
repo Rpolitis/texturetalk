@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import './button.css';
+import './quizbuttons.css';
 
 // StartQuiz component represents the start page of the quiz
 const StartQuiz = () => {

@@ -1,9 +1,10 @@
 import React from "react";
+import './quizbuttons.css';
 import { Link } from "react-router-dom";
 
 const Q1Type = () => {
     return (
-        <div style={{ textAlign: "center", marginTop: "50px" }} className="main">
+        <div style={{ textAlign: "center"}} className="main">
             <h1>What is your natural hair type?</h1>
             <h4>If you're unsure, check what your hair looks like after a shower!</h4>
             <h4>If your hair dries with no bend, you have straight hair.</h4>

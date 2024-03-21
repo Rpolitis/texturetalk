@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import './quizbuttons.css';
 
 const Q4Scalp = () => {
     return (
-        <div style={{ textAlign: "center", marginTop: "50px" }} className="main">
+        <div style={{ textAlign: "center"}} className="main">
             <h1>Describe your scalp one day after washing your hair.</h1>
             <h4>Oilier scalps tend to need washes more frequently than dry scalps!</h4>
             <div className="button-container">

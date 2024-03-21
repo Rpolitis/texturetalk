@@ -1,8 +1,9 @@
 import React from "react";
+import './quizbuttons.css';
 
 const Q2Texture = () => {
     return (
-        <div style={{ textAlign: "center", marginTop: "50px" }}>
+        <div style={{ textAlign: "center"}}>
             <h1>What is your hair texture?</h1>
             <h4>Describe your hair more specifically.</h4>
             <div className="button-container">

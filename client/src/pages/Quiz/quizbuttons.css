@@ -17,13 +17,17 @@ h4 {
     margin-top: -1.7%;
 }
 
+.main {
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
 
 .start-page {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
 }
 
 .start-button {
@@ -62,6 +66,8 @@ h4 {
     cursor: pointer;
     letter-spacing: 1px;
     transition: background-color 0.3s ease;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 
