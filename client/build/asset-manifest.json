@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d06cfdbd.css",
+    "main.js": "/static/js/main.78d38742.js",
+    "static/media/ariana-pic.jpg": "/static/media/ariana-pic.6c89d13436f943846eb1.jpg",
+    "static/media/colby-pic.jpg": "/static/media/colby-pic.e29e4b1a1d4e12f538ed.jpg",
+    "static/media/ryan-pic.jpg": "/static/media/ryan-pic.83aeaf1b8ec80f55990b.jpg",
+    "static/media/gradient-blur-pink-blue-abstract-background_53876-117324.png": "/static/media/gradient-blur-pink-blue-abstract-background_53876-117324.2c80a8d33aa44cffda2d.png",
+    "static/media/david-pic.jpg": "/static/media/david-pic.93c3fbe9b0e476df86db.jpg",
+    "index.html": "/index.html",
+    "main.d06cfdbd.css.map": "/static/css/main.d06cfdbd.css.map",
+    "main.78d38742.js.map": "/static/js/main.78d38742.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d06cfdbd.css",
+    "static/js/main.78d38742.js"
+  ]
+}
