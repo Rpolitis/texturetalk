@@ -41,10 +41,10 @@ const Navbar = () => {
             <div className="profile">
               <Avatar alt={user.result.name} src={user.result.imageUrl}>{user.result.name.charAt(0)}</Avatar>
               <Typography variant="h6">{user.result.name}</Typography>
-              <Button  className="logout" onClick={logout} sx={{ color: "rgb(201, 26, 137)", borderColor: "rgb(21, 21, 21)", ":hover": {color: "whitesmoke", backgroundColor: "rgb(21, 21, 21)", borderColor: "whitesmoke"}}} variant="outlined" >Logout</Button>
+              <Button  className="logout" onClick={logout} sx={{ color: "rgb(101, 26, 150)", borderColor: "rgb(21, 21, 21)", ":hover": {color: "whitesmoke", backgroundColor: "rgb(21, 21, 21)", borderColor: "whitesmoke"}}} variant="outlined" >Logout</Button>
             </div>
           ) : (
-            <Link className="login" to="/login"><Button sx={{ color: "rgb(201, 26, 137)", borderColor: "rgb(21, 21, 21)", ":hover": {color: "whitesmoke", backgroundColor: "rgb(21, 21, 21)", borderColor: "whitesmoke"}}} variant="outlined">login</Button></Link>
+            <Link className="login" to="/login"><Button sx={{ color: "rgb(101, 26, 150)", borderColor: "rgb(21, 21, 21)", ":hover": {color: "whitesmoke", backgroundColor: "rgb(21, 21, 21)", borderColor: "whitesmoke"}}} variant="outlined">login</Button></Link>
           )
         }
         </div>
