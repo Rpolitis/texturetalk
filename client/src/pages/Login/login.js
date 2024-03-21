@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import Input from "./input";
-import './login.css';
+import { TextField, Grid, Button, Paper, Container } from "@mui/material";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { Grid, Button, Paper, Container } from "@mui/material";
 import { signup, login } from "../../actions/auth";
+import './login.css';
 
 const initialState = { firstName: '', lastName: '', email: '', password: '', confirmPassword: ''};
 
@@ -40,14 +39,26 @@ const Login = () => {
                         {
                             isSignup && (
                                 <>
-                                    <Input name="firstName" label="First Name" handleChange={handleChange} half />
-                                    <Input name="lastName" label="Last Name" handleChange={handleChange} half />
+                                    <Grid item xs={12} sm={6}>
+                                        <TextField  name="firstName" onChange={handleChange} variant="outlined" required fullWidth label="First Name" autoFocus />
+                                    </Grid>
+                                    <Grid item xs={12} sm={6}>
+                                        <TextField name="lastName" onChange={handleChange} variant="outlined" required fullWidth label="Last Name" />
+                                    </Grid>
                                 </>
                             )
                         }
-                        <Input name="email" label="Email Address" handleChange={handleChange} type="email" />
-                        <Input name="password" label="Password" handleChange={handleChange} type="password" />
-                        { isSignup && <Input name="confirmPassword" label="Retype Password" handleChange={handleChange} type="password" />}
+                        <Grid item xs={12}>
+                            <TextField name="email" onChange={handleChange} variant="outlined" required fullWidth label="Email Address" type="email" />
+                        </Grid>
+                        <Grid item xs={12}>
+                            <TextField name="password" onChange={handleChange} variant="outlined" required fullWidth label="Password" type="password" />
+                        </Grid>
+                        { isSignup && 
+                            <Grid item xs={12}>
+                                <TextField name="confirmPassword" onChange={handleChange} variant="outlined" required fullWidth label="Retype Password" type="password" />
+                            </Grid>
+                        }
                     </Grid>
                     <Grid container paddingTop={2}>
                         <Button type="Submit" fullWidth variant="outlined" sx={{ color: "rgb(101, 26, 137)", borderColor: "rgb(21, 21, 21)", ":hover": {color: "whitesmoke", backgroundColor: "rgb(21, 21, 21)", borderColor: "whitesmoke"}}} >
@@ -68,5 +79,5 @@ const Login = () => {
         </Container>
     );
 };
- 
+
 export default Login;
