@@ -12,10 +12,14 @@ const Q1Type = () => {
             <h4 class = 'newh4'>If your hair dries with a defined curl, you have curly hair.</h4>
             <h4 class = 'newh4'>If your hair dries and forms tight spirals, you have coily hair.</h4>
             <div className="button-container">
-                <Link to={"/q3density"}> <button className="hair-type-button">Straight</button></Link>
+                {/*<Link to={"/q2density"}> <button className="hair-type-button">Straight</button></Link>
                 <Link to={"/q3density"}> <button className="hair-type-button">Wavy</button></Link>
                 <Link to={"/q3density"}> <button className="hair-type-button">Curly</button></Link>
-                <Link to={"/q3density"}> <button className="hair-type-button">Coily</button></Link>
+    <Link to={"/q3density"}> <button className="hair-type-button">Coily</button></Link> */}
+                <Link to={"/q2texture"}> <button className="hair-type-button">Straight</button></Link>
+                <Link to={"/q2texture"}> <button className="hair-type-button">Wavy</button></Link>
+                <Link to={"/q2texture"}> <button className="hair-type-button">Curly</button></Link>
+                <Link to={"/q2texture"}> <button className="hair-type-button">Coily</button></Link>
             </div>
         </div>
     );
