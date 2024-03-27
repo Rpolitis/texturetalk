@@ -50,7 +50,7 @@ const Login = () => {
                         { isSignup && <Input name="confirmPassword" label="Retype Password" handleChange={handleChange} type="password" />}
                     </Grid>
                     <Grid container paddingTop={2}>
-                        <Button type="Submit" fullWidth variant="outlined" sx={{ color: "rgb(201, 26, 137)", borderColor: "rgb(21, 21, 21)", ":hover": {color: "whitesmoke", backgroundColor: "rgb(21, 21, 21)", borderColor: "whitesmoke"}}} >
+                        <Button type="Submit" fullWidth variant="outlined" sx={{ color: "rgb(101, 26, 137)", borderColor: "rgb(21, 21, 21)", ":hover": {color: "whitesmoke", backgroundColor: "rgb(21, 21, 21)", borderColor: "whitesmoke"}}} >
                             {
                                 isSignup ? 'Sign Up' : 'Login'
                             }

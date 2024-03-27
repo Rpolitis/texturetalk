@@ -7,6 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   background-color: whitesmoke;
+  /* Background image from: https://www.freepik.com/free-photos-vectors/abstract-blur */
   background-image: url("/src/images/gradient-blur-pink-blue-abstract-background_53876-117324.png");
   background-repeat: no-repeat;
   background-size: cover;
