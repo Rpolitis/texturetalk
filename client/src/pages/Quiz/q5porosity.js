@@ -4,7 +4,7 @@ import './quizbuttons.css';
 
 const Q5Porosity = () => {
     return (
-        <div style={{ textAlign: "center"}} className="main">
+        <div style={{ textAlign: "center"}} className="main1">
             <h1>What is your hair's porosity?</h1>
             <h4>To find your hair’s porosity, place a single strand in a glass of water.</h4>
             <h4>If your hair floats on top of the water, it has low porosity.</h4>
